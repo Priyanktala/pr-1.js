@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+//  1 Write a javascript Program to two variable addition, subtraction, multiplication, division .(compulsory user input)
+
+var a = parseInt(prompt("enter the value of A "));
+var b = parseInt(prompt("enter the value of B "));
+
+document.write("value of a  = ", a);
+document.write("<br>value of b = ", b);
+document.write("<br>sum of a and b = ", a + b);
+document.write("<br>substaction of a and b = ", a - b);
+document.write("<br>multiplication of a and b = ", a * b);
+document.write("<br>division of a and b = ", a / b);
+document.write("<br> moduls of a and b = ", a % b);
+
+// 2 Write a javascript Program to perform a swapping of two variables.(compulsory user input)
+
+var a = parseInt(prompt("enter the value of a"));
+var b = parseInt(prompt("enter the value of b"));
+
+document.write("before swap<br>");
+document.write("a=" + a + "<br> b = " + b);
+a = a + b;
+b = a - b;
+a = a - b;
+
+// 2nd method
+
+a = a*b/b;
+b = b*a/a;
+
+document.write("<br>after swap<br>");
+document.write("a=" + a + "<br> b = " + b);
+
+// 3 Write a javascript program to convert temperature from degree Celsius to Fahrenheit.(compulsory user input)
+(formula :- c * (9/5) + 32)
+
+var c = prompt("enter celsius = ");
+var a = c * (9 / 5) + 32;
+
+
+document.write("Celsius to Fahrenheit = ", a);
+
+// 4 Write a javascript Program to find gross salary.(compulsory user input)
+Ex. Base Salary: 100 RS, HRA=10%, DA=5%, TA=8%.
+
+var s = parseFloat(prompt("enter the salary = "));
+var hra = 10 / 100 * s
+var da = 5 / 100 * s
+var ta = 8 / 100 * s;
+
+const total = s + hra + da + ta;
+
+console.log(total);
+
+// 5 Write a javascript Program to find circle area.(compulsory user input)(formula  3.14 * r * r)
+
+var r = prompt("enter radius of circle");
+var pi = 3.14
+a = pi * (r * r);
+
+
+document.write("area of circle is = ", a);
+// 6 Write a javascript Program to find triangle area.(compulsory user input)(formula  0.5 * b * h
+
+var b = prompt("enter base of triangle");
+var h = prompt("enter height of triangle");
+var pi = 3.14
+var a = 0.5 * b * h;;
+document.write("area of triangle is = ", a);
+// 7 Write a javascript Program to find  rate of interest.(compulsory user input)(p * r  * n / 100)
+
+var a = parseInt(prompt("enter the amount"));
+var r = parseFloat(prompt("enter rate"));
+var t = parseInt(prompt("enter year"));
+var i;
+
+i = a * r * t / 100;
+
+document.write("<br>your amount = ", a);
+document.write("<br>your interest = ", i);
+document.write("<br>your total amount is =", a + i);
+
+
+
+    </script>
+</body>
+</html>
